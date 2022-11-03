@@ -1,0 +1,11 @@
+.parent-card {
+  border: 1px solid black;
+}
+
+.form-check-right {
+  margin-left: 0px;
+}
+
+.no-whitespace-wrap {
+  white-space: nowrap;
+}
