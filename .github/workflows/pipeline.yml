@@ -88,4 +88,4 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/CAM-701-Soko-Aktiv-Mockup
+          folder: dist/cam-701-soko-aktiv-mockup
