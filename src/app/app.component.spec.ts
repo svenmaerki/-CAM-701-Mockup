@@ -16,9 +16,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'CAM-701-Soko-Aktiv-Mockup'`, () => {
+  it(`should have as title 'cam-701-soko-aktiv-mockup'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('CAM-701-Soko-Aktiv-Mockup');
+    expect(app.title).toEqual('cam-701-soko-aktiv-mockup');
   });
 });

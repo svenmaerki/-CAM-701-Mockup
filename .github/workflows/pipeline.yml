@@ -83,7 +83,7 @@ jobs:
         run:  npm install -g @angular/cli
 
       - name: Build
-        run: ng build CAM-701-Soko-Aktiv-Mockup -c production
+        run: ng build cam-701-soko-aktiv-mockup -c production
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

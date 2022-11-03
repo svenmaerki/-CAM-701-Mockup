@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CAM-701-Soko-Aktiv-Mockup": {
+    "cam-701-soko-aktiv-mockup": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -22,6 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "baseHref": "https://svenmaerki.github.io/CAM-701-Mockup/",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -71,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "CAM-701-Soko-Aktiv-Mockup:build:production"
+              "browserTarget": "cam-701-soko-aktiv-mockup:build:production"
             },
             "development": {
-              "browserTarget": "CAM-701-Soko-Aktiv-Mockup:build:development"
+              "browserTarget": "cam-701-soko-aktiv-mockup:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CAM-701-Soko-Aktiv-Mockup:build"
+            "browserTarget": "cam-701-soko-aktiv-mockup:build"
           }
         },
         "test": {

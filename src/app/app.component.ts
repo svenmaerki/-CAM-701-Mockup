@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CAM-701-Soko-Aktiv-Mockup';
+  title = 'cam-701-soko-aktiv-mockup';
 }
