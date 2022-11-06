@@ -36,7 +36,7 @@
               <div class="col-lg-3"><span class="fw-bold">DB II Year-to-Date: </span>20691 (bis Juni)</div>
               <div class="col-lg-3"><span class="fw-bold">HBZ Points: </span>17.50</div>
               <div class="col-lg-3">
-                <span class="fw-bold">Rating: </span><input class="form-check-input" type="checkbox" disabled />
+                <span class="fw-bold">HBZ: </span><input class="form-check-input" type="checkbox" disabled />
               </div>
             </div>
           </div>
@@ -75,16 +75,12 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="form-check">
-              <input class="form-check-input" id="zinsabschlag" type="checkbox" />
+              <input class="form-check-input" id="zinsabschlag" type="checkbox" disabled />
               <label for="zinsabschlag">Zinsabschlag</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" id="gebuehren" type="checkbox" />
+              <input class="form-check-input opacity-100" id="gebuehren" checked type="checkbox" disabled />
               <label for="gebuehren">Gebühren</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" id="produktabweichung" type="checkbox" />
-              <label for="produktabweichung">Produktabweichung / FW</label>
             </div>
           </div>
           <div class="col-lg-6">
@@ -103,7 +99,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="form-check">
-              <input class="form-check-input" id="hypothek" type="checkbox" />
+              <input class="form-check-input" id="hypothek" type="checkbox" checked />
               <label for="hypothek">Hypothek</label>
             </div>
             <div class="form-check">
@@ -348,8 +344,8 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-floating">
-                  <textarea disabled class="form-control" id="sektorleiter" style="height: 100px"></textarea
-                  ><label for="sektorleiter">Sektorleiter - Nachname Vorname - 01.11.2022</label>
+                  <textarea disabled class="form-control" id="sektorleiterBegruendung" style="height: 100px"></textarea
+                  ><label for="sektorleiterBegruendung">Sektorleiter - Nachname Vorname - 01.11.2022</label>
                 </div>
               </div>
               <div class="col-lg-6">
@@ -359,18 +355,18 @@
                     checked
                     class="form-check-input opacity-100"
                     type="radio"
-                    name="entscheid"
-                    id="offen"
+                    name="sektor"
+                    id="sektorOffen"
                   />
-                  <label for="offen" class="form-check-label opacity-100">Offen</label>
+                  <label for="sektorOffen" class="form-check-label opacity-100">Offen</label>
                 </div>
                 <div class="form-check">
-                  <input disabled class="form-check-input" type="radio" name="bewilligt" id="offen" />
-                  <label for="offen" class="form-check-label">Bewilligt</label>
+                  <input disabled class="form-check-input" type="radio" name="sektor" id="sektorBewilligt" />
+                  <label for="sektorBewilligt" class="form-check-label">Bewilligt</label>
                 </div>
                 <div class="form-check">
-                  <input disabled class="form-check-input" type="radio" name="entscheid" id="abgelehnt" />
-                  <label for="offen" class="form-check-label">Abgelehnt</label>
+                  <input disabled class="form-check-input" type="radio" name="sektor" id="sektorAbgelehnt" />
+                  <label for="sektorAbgelehnt" class="form-check-label">Abgelehnt</label>
                 </div>
               </div>
             </div>
@@ -378,14 +374,25 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-floating">
-                  <textarea disabled class="form-control" id="regionalleiter" style="height: 100px"></textarea
-                  ><label for="regionalleiter">Regionalleiter - Nachname Vorname - 01.11.2022</label>
+                  <textarea
+                    disabled
+                    class="form-control"
+                    id="regionalleiterBegruendung"
+                    style="height: 100px"
+                  ></textarea
+                  ><label for="regionalleiterBegruendung">Regionalleiter - Nachname Vorname - 01.11.2022</label>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-check">
-                  <input disabled class="form-check-input" type="radio" name="entscheid" id="offen" />
-                  <label for="offen" class="form-check-label">Offen</label>
+                  <input
+                    disabled
+                    class="form-check-input"
+                    type="radio"
+                    name="regionalleiter"
+                    id="regionalleiterOffen"
+                  />
+                  <label for="regionalleiterOffen" class="form-check-label">Offen</label>
                 </div>
                 <div class="form-check">
                   <input
@@ -393,14 +400,20 @@
                     disabled
                     class="form-check-input opacity-100"
                     type="radio"
-                    name="bewilligt"
-                    id="offen"
+                    name="regionalleiter"
+                    id="regionalleiterBewilligt"
                   />
-                  <label for="offen" class="form-check-label opacity-100">Bewilligt</label>
+                  <label for="regionalleiterBewilligt" class="form-check-label opacity-100">Bewilligt</label>
                 </div>
                 <div class="form-check">
-                  <input disabled class="form-check-input" type="radio" name="entscheid" id="abgelehnt" />
-                  <label for="offen" class="form-check-label">Abgelehnt</label>
+                  <input
+                    disabled
+                    class="form-check-input"
+                    type="radio"
+                    name="regionalleiter"
+                    id="regionalleiterAbgelehnt"
+                  />
+                  <label for="regionalleiterAbgelehnt" class="form-check-label">Abgelehnt</label>
                 </div>
               </div>
             </div>
@@ -410,13 +423,30 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="form-floating">
-              <textarea class="form-control" id="antragsbegruendung" style="height: 150px"></textarea
-              ><label for="antragsbegruendung">Antragsbegründung</label>
+              <textarea class="form-control" id="approvalAntragsbegruendung" style="height: 150px"></textarea
+              ><label for="approvalAntragsbegruendung">Antragsbegründung</label>
             </div>
           </div>
           <div class="col-lg-6">
-            <p><span class="fw-bold">Name: </span> Mustermann Max</p>
-            <p><span class="fw-bold">Datum: </span>01.11.2022</p>
+            <div class="col-lg-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="currentApproval" id="approvalOffen" />
+                <label for="approvalOffen" class="form-check-label">Offen</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input opacity-100"
+                  type="radio"
+                  name="currentApproval"
+                  id="approvalBewilligt"
+                />
+                <label for="approvalBewilligt" class="form-check-label opacity-100">Bewilligt</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="currentApproval" id="approvalAbgelehnt" />
+                <label for="approvalAbgelehnt" class="form-check-label">Abgelehnt</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -22,7 +22,6 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "baseHref": "https://svenmaerki.github.io/CAM-701-Mockup/",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -55,6 +54,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "baseHref": "https://svenmaerki.github.io/CAM-701-Mockup/",
               "outputHashing": "all"
             },
             "development": {
@@ -121,6 +121,7 @@
   "cli": {
     "schematicCollections": [
       "@angular-eslint/schematics"
-    ]
+    ],
+    "analytics": false
   }
 }
